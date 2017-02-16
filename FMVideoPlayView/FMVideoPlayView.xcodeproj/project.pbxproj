@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153B70FA1E5578B500095268 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B70F91E5578B500095268 /* main.m */; };
+		153B70FD1E5578B500095268 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B70FC1E5578B500095268 /* AppDelegate.m */; };
+		153B71001E5578B500095268 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B70FF1E5578B500095268 /* ViewController.m */; };
+		153B71031E5578B500095268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153B71011E5578B500095268 /* Main.storyboard */; };
+		153B71051E5578B500095268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153B71041E5578B500095268 /* Assets.xcassets */; };
+		153B71081E5578B500095268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153B71061E5578B500095268 /* LaunchScreen.storyboard */; };
+		153B71131E5578B500095268 /* FMVideoPlayViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B71121E5578B500095268 /* FMVideoPlayViewTests.m */; };
+		153B711E1E5578B500095268 /* FMVideoPlayViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B711D1E5578B500095268 /* FMVideoPlayViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		153B710F1E5578B500095268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 153B70ED1E5578B500095268 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 153B70F41E5578B500095268;
+			remoteInfo = FMVideoPlayView;
+		};
+		153B711A1E5578B500095268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 153B70ED1E5578B500095268 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 153B70F41E5578B500095268;
+			remoteInfo = FMVideoPlayView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		153B70F51E5578B500095268 /* FMVideoPlayView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMVideoPlayView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		153B70F91E5578B500095268 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		153B70FB1E5578B500095268 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		153B70FC1E5578B500095268 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		153B70FE1E5578B500095268 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		153B70FF1E5578B500095268 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		153B71021E5578B500095268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		153B71041E5578B500095268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		153B71071E5578B500095268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		153B71091E5578B500095268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		153B710E1E5578B500095268 /* FMVideoPlayViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMVideoPlayViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		153B71121E5578B500095268 /* FMVideoPlayViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMVideoPlayViewTests.m; sourceTree = "<group>"; };
+		153B71141E5578B500095268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		153B71191E5578B500095268 /* FMVideoPlayViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMVideoPlayViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		153B711D1E5578B500095268 /* FMVideoPlayViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMVideoPlayViewUITests.m; sourceTree = "<group>"; };
+		153B711F1E5578B500095268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		153B70F21E5578B500095268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153B710B1E5578B500095268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153B71161E5578B500095268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		153B70EC1E5578B500095268 = {
+			isa = PBXGroup;
+			children = (
+				153B70F71E5578B500095268 /* FMVideoPlayView */,
+				153B71111E5578B500095268 /* FMVideoPlayViewTests */,
+				153B711C1E5578B500095268 /* FMVideoPlayViewUITests */,
+				153B70F61E5578B500095268 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		153B70F61E5578B500095268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				153B70F51E5578B500095268 /* FMVideoPlayView.app */,
+				153B710E1E5578B500095268 /* FMVideoPlayViewTests.xctest */,
+				153B71191E5578B500095268 /* FMVideoPlayViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		153B70F71E5578B500095268 /* FMVideoPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				153B70FB1E5578B500095268 /* AppDelegate.h */,
+				153B70FC1E5578B500095268 /* AppDelegate.m */,
+				153B70FE1E5578B500095268 /* ViewController.h */,
+				153B70FF1E5578B500095268 /* ViewController.m */,
+				153B71011E5578B500095268 /* Main.storyboard */,
+				153B71041E5578B500095268 /* Assets.xcassets */,
+				153B71061E5578B500095268 /* LaunchScreen.storyboard */,
+				153B71091E5578B500095268 /* Info.plist */,
+				153B70F81E5578B500095268 /* Supporting Files */,
+			);
+			path = FMVideoPlayView;
+			sourceTree = "<group>";
+		};
+		153B70F81E5578B500095268 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				153B70F91E5578B500095268 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		153B71111E5578B500095268 /* FMVideoPlayViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				153B71121E5578B500095268 /* FMVideoPlayViewTests.m */,
+				153B71141E5578B500095268 /* Info.plist */,
+			);
+			path = FMVideoPlayViewTests;
+			sourceTree = "<group>";
+		};
+		153B711C1E5578B500095268 /* FMVideoPlayViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				153B711D1E5578B500095268 /* FMVideoPlayViewUITests.m */,
+				153B711F1E5578B500095268 /* Info.plist */,
+			);
+			path = FMVideoPlayViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		153B70F41E5578B500095268 /* FMVideoPlayView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153B71221E5578B500095268 /* Build configuration list for PBXNativeTarget "FMVideoPlayView" */;
+			buildPhases = (
+				153B70F11E5578B500095268 /* Sources */,
+				153B70F21E5578B500095268 /* Frameworks */,
+				153B70F31E5578B500095268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMVideoPlayView;
+			productName = FMVideoPlayView;
+			productReference = 153B70F51E5578B500095268 /* FMVideoPlayView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		153B710D1E5578B500095268 /* FMVideoPlayViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153B71251E5578B500095268 /* Build configuration list for PBXNativeTarget "FMVideoPlayViewTests" */;
+			buildPhases = (
+				153B710A1E5578B500095268 /* Sources */,
+				153B710B1E5578B500095268 /* Frameworks */,
+				153B710C1E5578B500095268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				153B71101E5578B500095268 /* PBXTargetDependency */,
+			);
+			name = FMVideoPlayViewTests;
+			productName = FMVideoPlayViewTests;
+			productReference = 153B710E1E5578B500095268 /* FMVideoPlayViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		153B71181E5578B500095268 /* FMVideoPlayViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153B71281E5578B500095268 /* Build configuration list for PBXNativeTarget "FMVideoPlayViewUITests" */;
+			buildPhases = (
+				153B71151E5578B500095268 /* Sources */,
+				153B71161E5578B500095268 /* Frameworks */,
+				153B71171E5578B500095268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				153B711B1E5578B500095268 /* PBXTargetDependency */,
+			);
+			name = FMVideoPlayViewUITests;
+			productName = FMVideoPlayViewUITests;
+			productReference = 153B71191E5578B500095268 /* FMVideoPlayViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		153B70ED1E5578B500095268 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "周发明";
+				TargetAttributes = {
+					153B70F41E5578B500095268 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5FVZG33394;
+						ProvisioningStyle = Automatic;
+					};
+					153B710D1E5578B500095268 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5FVZG33394;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 153B70F41E5578B500095268;
+					};
+					153B71181E5578B500095268 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5FVZG33394;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 153B70F41E5578B500095268;
+					};
+				};
+			};
+			buildConfigurationList = 153B70F01E5578B500095268 /* Build configuration list for PBXProject "FMVideoPlayView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 153B70EC1E5578B500095268;
+			productRefGroup = 153B70F61E5578B500095268 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				153B70F41E5578B500095268 /* FMVideoPlayView */,
+				153B710D1E5578B500095268 /* FMVideoPlayViewTests */,
+				153B71181E5578B500095268 /* FMVideoPlayViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		153B70F31E5578B500095268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153B71081E5578B500095268 /* LaunchScreen.storyboard in Resources */,
+				153B71051E5578B500095268 /* Assets.xcassets in Resources */,
+				153B71031E5578B500095268 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153B710C1E5578B500095268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153B71171E5578B500095268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		153B70F11E5578B500095268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153B71001E5578B500095268 /* ViewController.m in Sources */,
+				153B70FD1E5578B500095268 /* AppDelegate.m in Sources */,
+				153B70FA1E5578B500095268 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153B710A1E5578B500095268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153B71131E5578B500095268 /* FMVideoPlayViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153B71151E5578B500095268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153B711E1E5578B500095268 /* FMVideoPlayViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		153B71101E5578B500095268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 153B70F41E5578B500095268 /* FMVideoPlayView */;
+			targetProxy = 153B710F1E5578B500095268 /* PBXContainerItemProxy */;
+		};
+		153B711B1E5578B500095268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 153B70F41E5578B500095268 /* FMVideoPlayView */;
+			targetProxy = 153B711A1E5578B500095268 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		153B71011E5578B500095268 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153B71021E5578B500095268 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		153B71061E5578B500095268 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153B71071E5578B500095268 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		153B71201E5578B500095268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		153B71211E5578B500095268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		153B71231E5578B500095268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMVideoPlayView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMVideoPlayView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		153B71241E5578B500095268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMVideoPlayView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMVideoPlayView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		153B71261E5578B500095268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMVideoPlayViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMVideoPlayViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMVideoPlayView.app/FMVideoPlayView";
+			};
+			name = Debug;
+		};
+		153B71271E5578B500095268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMVideoPlayViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMVideoPlayViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMVideoPlayView.app/FMVideoPlayView";
+			};
+			name = Release;
+		};
+		153B71291E5578B500095268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMVideoPlayViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMVideoPlayViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FMVideoPlayView;
+			};
+			name = Debug;
+		};
+		153B712A1E5578B500095268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMVideoPlayViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMVideoPlayViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FMVideoPlayView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		153B70F01E5578B500095268 /* Build configuration list for PBXProject "FMVideoPlayView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153B71201E5578B500095268 /* Debug */,
+				153B71211E5578B500095268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		153B71221E5578B500095268 /* Build configuration list for PBXNativeTarget "FMVideoPlayView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153B71231E5578B500095268 /* Debug */,
+				153B71241E5578B500095268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		153B71251E5578B500095268 /* Build configuration list for PBXNativeTarget "FMVideoPlayViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153B71261E5578B500095268 /* Debug */,
+				153B71271E5578B500095268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		153B71281E5578B500095268 /* Build configuration list for PBXNativeTarget "FMVideoPlayViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153B71291E5578B500095268 /* Debug */,
+				153B712A1E5578B500095268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 153B70ED1E5578B500095268 /* Project object */;
+}
