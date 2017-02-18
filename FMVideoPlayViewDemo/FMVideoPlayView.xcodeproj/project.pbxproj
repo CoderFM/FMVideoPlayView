@@ -15,6 +15,20 @@
 		153B71081E5578B500095268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153B71061E5578B500095268 /* LaunchScreen.storyboard */; };
 		153B71131E5578B500095268 /* FMVideoPlayViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B71121E5578B500095268 /* FMVideoPlayViewTests.m */; };
 		153B711E1E5578B500095268 /* FMVideoPlayViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B711D1E5578B500095268 /* FMVideoPlayViewUITests.m */; };
+		153B71311E55A43900095268 /* FMVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B71301E55A43900095268 /* FMVideoPlayView.m */; };
+		153B715C1E568C5400095268 /* fmvideo_icon_ fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71531E568C5400095268 /* fmvideo_icon_ fullscreen@2x.png */; };
+		153B715D1E568C5400095268 /* fmvideo_icon_ fullscreen_no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71541E568C5400095268 /* fmvideo_icon_ fullscreen_no@2x.png */; };
+		153B715E1E568C5400095268 /* fmvideo_icon_ silent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71551E568C5400095268 /* fmvideo_icon_ silent@2x.png */; };
+		153B715F1E568C5400095268 /* fmvideo_icon_ silent_no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71561E568C5400095268 /* fmvideo_icon_ silent_no@2x.png */; };
+		153B71601E568C5400095268 /* fmvideo_icon_download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71571E568C5400095268 /* fmvideo_icon_download@2x.png */; };
+		153B71611E568C5400095268 /* fmvideo_icon_exit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71581E568C5400095268 /* fmvideo_icon_exit@2x.png */; };
+		153B71621E568C5400095268 /* fmvideo_icon_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71591E568C5400095268 /* fmvideo_icon_pause@2x.png */; };
+		153B71631E568C5400095268 /* fmvideo_icon_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B715A1E568C5400095268 /* fmvideo_icon_play@2x.png */; };
+		153B71641E568C5400095268 /* fmvideo_icon_share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B715B1E568C5400095268 /* fmvideo_icon_share@2x.png */; };
+		153B71661E56924000095268 /* fmvideo_icon_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71651E56924000095268 /* fmvideo_icon_slider@2x.png */; };
+		153B71691E5694B900095268 /* FMVedioBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B71681E5694B900095268 /* FMVedioBottomToolBar.m */; };
+		153B716C1E56D44100095268 /* FMVideoFullScreenPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B716B1E56D44100095268 /* FMVideoFullScreenPlayController.m */; };
+		15A1928A1E57EB17004F7A57 /* FMVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A192891E57EB17004F7A57 /* FMVideoPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +65,24 @@
 		153B71191E5578B500095268 /* FMVideoPlayViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMVideoPlayViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		153B711D1E5578B500095268 /* FMVideoPlayViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMVideoPlayViewUITests.m; sourceTree = "<group>"; };
 		153B711F1E5578B500095268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		153B712F1E55A43900095268 /* FMVideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVideoPlayView.h; sourceTree = "<group>"; };
+		153B71301E55A43900095268 /* FMVideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVideoPlayView.m; sourceTree = "<group>"; };
+		153B71531E568C5400095268 /* fmvideo_icon_ fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_ fullscreen@2x.png"; sourceTree = "<group>"; };
+		153B71541E568C5400095268 /* fmvideo_icon_ fullscreen_no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_ fullscreen_no@2x.png"; sourceTree = "<group>"; };
+		153B71551E568C5400095268 /* fmvideo_icon_ silent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_ silent@2x.png"; sourceTree = "<group>"; };
+		153B71561E568C5400095268 /* fmvideo_icon_ silent_no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_ silent_no@2x.png"; sourceTree = "<group>"; };
+		153B71571E568C5400095268 /* fmvideo_icon_download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_download@2x.png"; sourceTree = "<group>"; };
+		153B71581E568C5400095268 /* fmvideo_icon_exit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_exit@2x.png"; sourceTree = "<group>"; };
+		153B71591E568C5400095268 /* fmvideo_icon_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_pause@2x.png"; sourceTree = "<group>"; };
+		153B715A1E568C5400095268 /* fmvideo_icon_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_play@2x.png"; sourceTree = "<group>"; };
+		153B715B1E568C5400095268 /* fmvideo_icon_share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_share@2x.png"; sourceTree = "<group>"; };
+		153B71651E56924000095268 /* fmvideo_icon_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fmvideo_icon_slider@2x.png"; sourceTree = "<group>"; };
+		153B71671E5694B900095268 /* FMVedioBottomToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVedioBottomToolBar.h; sourceTree = "<group>"; };
+		153B71681E5694B900095268 /* FMVedioBottomToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVedioBottomToolBar.m; sourceTree = "<group>"; };
+		153B716A1E56D44100095268 /* FMVideoFullScreenPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVideoFullScreenPlayController.h; sourceTree = "<group>"; };
+		153B716B1E56D44100095268 /* FMVideoFullScreenPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVideoFullScreenPlayController.m; sourceTree = "<group>"; };
+		15A192881E57EB17004F7A57 /* FMVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVideoPlayer.h; sourceTree = "<group>"; };
+		15A192891E57EB17004F7A57 /* FMVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVideoPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +133,7 @@
 		153B70F71E5578B500095268 /* FMVideoPlayView */ = {
 			isa = PBXGroup;
 			children = (
+				153B712E1E55A43900095268 /* FMVideoPlayView */,
 				153B70FB1E5578B500095268 /* AppDelegate.h */,
 				153B70FC1E5578B500095268 /* AppDelegate.m */,
 				153B70FE1E5578B500095268 /* ViewController.h */,
@@ -138,6 +171,39 @@
 				153B711F1E5578B500095268 /* Info.plist */,
 			);
 			path = FMVideoPlayViewUITests;
+			sourceTree = "<group>";
+		};
+		153B712E1E55A43900095268 /* FMVideoPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				153B71521E568C5400095268 /* Resouce */,
+				153B712F1E55A43900095268 /* FMVideoPlayView.h */,
+				153B71301E55A43900095268 /* FMVideoPlayView.m */,
+				153B716A1E56D44100095268 /* FMVideoFullScreenPlayController.h */,
+				153B716B1E56D44100095268 /* FMVideoFullScreenPlayController.m */,
+				153B71671E5694B900095268 /* FMVedioBottomToolBar.h */,
+				153B71681E5694B900095268 /* FMVedioBottomToolBar.m */,
+				15A192881E57EB17004F7A57 /* FMVideoPlayer.h */,
+				15A192891E57EB17004F7A57 /* FMVideoPlayer.m */,
+			);
+			path = FMVideoPlayView;
+			sourceTree = "<group>";
+		};
+		153B71521E568C5400095268 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				153B71651E56924000095268 /* fmvideo_icon_slider@2x.png */,
+				153B71531E568C5400095268 /* fmvideo_icon_ fullscreen@2x.png */,
+				153B71541E568C5400095268 /* fmvideo_icon_ fullscreen_no@2x.png */,
+				153B71551E568C5400095268 /* fmvideo_icon_ silent@2x.png */,
+				153B71561E568C5400095268 /* fmvideo_icon_ silent_no@2x.png */,
+				153B71571E568C5400095268 /* fmvideo_icon_download@2x.png */,
+				153B71581E568C5400095268 /* fmvideo_icon_exit@2x.png */,
+				153B71591E568C5400095268 /* fmvideo_icon_pause@2x.png */,
+				153B715A1E568C5400095268 /* fmvideo_icon_play@2x.png */,
+				153B715B1E568C5400095268 /* fmvideo_icon_share@2x.png */,
+			);
+			path = Resouce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +315,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153B715C1E568C5400095268 /* fmvideo_icon_ fullscreen@2x.png in Resources */,
+				153B715D1E568C5400095268 /* fmvideo_icon_ fullscreen_no@2x.png in Resources */,
+				153B71641E568C5400095268 /* fmvideo_icon_share@2x.png in Resources */,
+				153B71601E568C5400095268 /* fmvideo_icon_download@2x.png in Resources */,
+				153B715E1E568C5400095268 /* fmvideo_icon_ silent@2x.png in Resources */,
 				153B71081E5578B500095268 /* LaunchScreen.storyboard in Resources */,
+				153B71631E568C5400095268 /* fmvideo_icon_play@2x.png in Resources */,
 				153B71051E5578B500095268 /* Assets.xcassets in Resources */,
+				153B71661E56924000095268 /* fmvideo_icon_slider@2x.png in Resources */,
 				153B71031E5578B500095268 /* Main.storyboard in Resources */,
+				153B71621E568C5400095268 /* fmvideo_icon_pause@2x.png in Resources */,
+				153B715F1E568C5400095268 /* fmvideo_icon_ silent_no@2x.png in Resources */,
+				153B71611E568C5400095268 /* fmvideo_icon_exit@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +353,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				153B71001E5578B500095268 /* ViewController.m in Sources */,
+				15A1928A1E57EB17004F7A57 /* FMVideoPlayer.m in Sources */,
+				153B71691E5694B900095268 /* FMVedioBottomToolBar.m in Sources */,
 				153B70FD1E5578B500095268 /* AppDelegate.m in Sources */,
 				153B70FA1E5578B500095268 /* main.m in Sources */,
+				153B71311E55A43900095268 /* FMVideoPlayView.m in Sources */,
+				153B716C1E56D44100095268 /* FMVideoFullScreenPlayController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +507,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5FVZG33394;
 				INFOPLIST_FILE = FMVideoPlayView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMVideoPlayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5FVZG33394;
 				INFOPLIST_FILE = FMVideoPlayView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMVideoPlayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +596,7 @@
 				153B71241E5578B500095268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		153B71251E5578B500095268 /* Build configuration list for PBXNativeTarget "FMVideoPlayViewTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +605,7 @@
 				153B71271E5578B500095268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		153B71281E5578B500095268 /* Build configuration list for PBXNativeTarget "FMVideoPlayViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +614,7 @@
 				153B712A1E5578B500095268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
