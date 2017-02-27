@@ -30,9 +30,6 @@
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.playView pause];
-//    if (self.exitFullscreenModelBlock) {
-//        self.exitFullscreenModelBlock();
-//    }
 }
 
 - (void)viewWillLayoutSubviews{

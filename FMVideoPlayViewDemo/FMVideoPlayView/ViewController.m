@@ -10,6 +10,7 @@
 #import "FMVideoPlayView.h"
 #import "FMVideoFullScreenPlayController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -31,7 +32,4 @@
 - (IBAction)turnController:(id)sender {
     
 }
-
-
-
 @end

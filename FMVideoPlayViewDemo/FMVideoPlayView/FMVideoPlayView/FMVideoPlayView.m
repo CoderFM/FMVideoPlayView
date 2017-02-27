@@ -9,16 +9,26 @@
 #import "FMVideoPlayView.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "FMVedioBottomToolBar.h"
+#import "FMVedioTopToolBar.h"
 #import "FMVideoFullScreenPlayController.h"
+#import "FMVedioNoHighlightButton.h"
+
+#import <ifaddrs.h>
+#import <arpa/inet.h>
+#import <net/if.h>
+
 
 NSString *GetTimeStringWithSeconds(float seconds){
+    if (isnan(seconds)){
+        return @"00:00";
+    }
     NSInteger sec = (NSInteger)seconds % 60;
     NSInteger min = ((NSInteger)seconds / 60) % 60;
     NSInteger hour = (NSInteger)seconds / 3600;
     if (hour > 0) { // 超过一个小时
-        return [NSString stringWithFormat:@"%02d:%02d:%02d", hour, min, sec];
+        return [NSString stringWithFormat:@"%02ld:%02ld:%02ld", (long)hour, (long)min, (long)sec];
     } else { // 没有超过一个小时
-        return [NSString stringWithFormat:@"%02d:%02d", min, sec];
+        return [NSString stringWithFormat:@"%02ld:%02ld", (long)min, (long)sec];
     }
 }
 
@@ -32,11 +42,14 @@ NSString *GetTimeStringWithSeconds(float seconds){
 
 @property(nonatomic, weak)FMVedioBottomToolBar *bottomView;
 
+@property(nonatomic, weak)FMVedioTopToolBar *topView;
+
 @property(nonatomic, weak)NSTimer *timer;
 
 @property(nonatomic, assign)BOOL isLayout;
 
 @property(nonatomic, assign)CGPoint currentLocationPoint;
+
 @property(nonatomic, assign)FMVideoPlayViewLocation currentLocation;
 @property(nonatomic, assign)FMVideoPlayViewPanModel currentPanModel;
 
@@ -46,27 +59,36 @@ NSString *GetTimeStringWithSeconds(float seconds){
 
 @property(nonatomic, weak)AVPlayer *player;
 
+@property(nonatomic, weak)CADisplayLink *displayLink;
+
 @end
+
+uint32_t lastBytes = 0;
 
 @implementation FMVideoPlayView
 
 - (instancetype)initWithFrame:(CGRect)frame sourceController:(UIViewController *)sourceVC currentItemUrl:(NSString *)url{
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor blackColor];        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playError:) name:AVPlayerItemFailedToPlayToEndTimeNotification object:nil];
-        
+        self.backgroundColor = [UIColor blackColor];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playError:) name:AVPlayerItemFailedToPlayToEndTimeNotification object:nil];
         [self.player addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
-        
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-        
         [self addGestureRecognizer:tap];
+        
+        UITapGestureRecognizer *tap2count = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap2count:)];
+        tap2count.numberOfTapsRequired = 2;
+        [self addGestureRecognizer:tap2count];
+        [tap requireGestureRecognizerToFail:tap2count];
         
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
         [self addGestureRecognizer:pan];
         [self bottomView];
-        
+        [self topView];
         self.sourceVC = sourceVC;
         AVPlayerItem *item = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:url]];
         [self.player replaceCurrentItemWithPlayerItem:item];
+        
+        [self displayLink];
     }
     return self;
 }
@@ -125,7 +147,21 @@ NSString *GetTimeStringWithSeconds(float seconds){
 }
 
 - (void)tap:(UITapGestureRecognizer *)tap{
-    self.bottomView.hidden = !self.bottomView.isHidden;
+    [UIView animateWithDuration:0.2 animations:^{
+        self.bottomView.hidden = !self.bottomView.isHidden;
+    }];
+}
+
+- (void)tap2count:(UITapGestureRecognizer *)tap{
+    if ([UIDevice currentDevice].orientation == UIInterfaceOrientationPortrait){
+        [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationLandscapeRight) forKey: @"orientation"];
+        [self.fullscreenVC.playView synchronizeCurrentTime:self.player.currentItem.currentTime];
+        [self.fullscreenVC.playView setCurrentTime];
+        [self pause];
+        [self.sourceVC presentViewController:self.fullscreenVC animated:YES completion:^{
+            [self.fullscreenVC.playView play];
+        }];
+    }
 }
 
 - (void)pan:(UIPanGestureRecognizer *)pan{
@@ -267,11 +303,14 @@ NSString *GetTimeStringWithSeconds(float seconds){
     self.bottomView.slider.value = times / seconds;
     
     [self.bottomView setCurrentTime:GetTimeStringWithSeconds(times) totalTime:GetTimeStringWithSeconds(seconds)];
+    
+//    [self getInterfaceBytes];
+    
 }
 
 - (void)fullScreenButtonClick:(UIButton *)sender{
     if (self.directionType == FMVideoPlayViewNormalType){ // 去全屏
-        [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationLandscapeLeft) forKey: @"orientation"];
+        [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationLandscapeRight) forKey: @"orientation"];
         [self.fullscreenVC.playView synchronizeCurrentTime:self.player.currentItem.currentTime];
         [self.fullscreenVC.playView setCurrentTime];
         [self pause];
@@ -302,6 +341,17 @@ NSString *GetTimeStringWithSeconds(float seconds){
         [self play];
     } else {
         [self pause];
+    }
+}
+
+- (void)exitButtonClick:(UIButton *)sender{
+    if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight) {
+        [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationPortrait) forKey: @"orientation"];
+        [self.fullscreenVC.sourcePlayView synchronizeCurrentTime:self.fullscreenVC.playView.player.currentItem.currentTime];
+        [self.fullscreenVC.sourcePlayView setCurrentTime];
+        [self.fullscreenVC dismissViewControllerAnimated:YES completion:^{
+            [self.fullscreenVC.sourcePlayView play];
+        }];
     }
 }
 
@@ -363,6 +413,23 @@ NSString *GetTimeStringWithSeconds(float seconds){
         _bottomView = view;
     }
     return _bottomView;
+}
+
+- (FMVedioTopToolBar *)topView{
+    if (nil == _topView) {
+        FMVedioTopToolBar *top = [[FMVedioTopToolBar alloc] init];
+        [top.exitButton addTarget:self action:@selector(exitButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:top];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:top attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:0]];
+        
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:top attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:0]];
+        
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:top attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
+        
+        [top addConstraint:[NSLayoutConstraint constraintWithItem:top attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:0 constant:FMVedioTopToolBarHeight]];
+        _topView = top;
+    }
+    return _topView;
 }
 
 - (FMVideoFullScreenPlayController *)fullscreenVC{

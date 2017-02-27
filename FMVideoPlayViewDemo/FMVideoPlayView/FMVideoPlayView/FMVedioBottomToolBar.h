@@ -11,10 +11,7 @@
 static CGFloat const  FMVedioBottomToolBarHeight = 30;
 static CGFloat const  FMVedioBottomToolBarNormalMargin = 10;
 
-@interface FMVedioNoHighlightButton : UIButton
-
-@end
-
+@class FMVedioNoHighlightButton;
 @interface FMVedioBottomToolBar : UIView
 
 @property(nonatomic, weak)FMVedioNoHighlightButton *fullScreenButton;

@@ -28,7 +28,9 @@
 		153B71661E56924000095268 /* fmvideo_icon_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 153B71651E56924000095268 /* fmvideo_icon_slider@2x.png */; };
 		153B71691E5694B900095268 /* FMVedioBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B71681E5694B900095268 /* FMVedioBottomToolBar.m */; };
 		153B716C1E56D44100095268 /* FMVideoFullScreenPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B716B1E56D44100095268 /* FMVideoFullScreenPlayController.m */; };
-		15A1928A1E57EB17004F7A57 /* FMVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A192891E57EB17004F7A57 /* FMVideoPlayer.m */; };
+		15BE2BAF1E5C0B6100E3B923 /* FMVideoNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE2BAE1E5C0B6100E3B923 /* FMVideoNetTool.m */; };
+		15F85AFE1E5ACAEC00FA9C0F /* FMVedioTopToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F85AFD1E5ACAEC00FA9C0F /* FMVedioTopToolBar.m */; };
+		15F85B011E5ACB7700FA9C0F /* FMVedioNoHighlightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F85B001E5ACB7700FA9C0F /* FMVedioNoHighlightButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +83,12 @@
 		153B71681E5694B900095268 /* FMVedioBottomToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVedioBottomToolBar.m; sourceTree = "<group>"; };
 		153B716A1E56D44100095268 /* FMVideoFullScreenPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVideoFullScreenPlayController.h; sourceTree = "<group>"; };
 		153B716B1E56D44100095268 /* FMVideoFullScreenPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVideoFullScreenPlayController.m; sourceTree = "<group>"; };
-		15A192881E57EB17004F7A57 /* FMVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVideoPlayer.h; sourceTree = "<group>"; };
-		15A192891E57EB17004F7A57 /* FMVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVideoPlayer.m; sourceTree = "<group>"; };
+		15BE2BAD1E5C0B6100E3B923 /* FMVideoNetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVideoNetTool.h; sourceTree = "<group>"; };
+		15BE2BAE1E5C0B6100E3B923 /* FMVideoNetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVideoNetTool.m; sourceTree = "<group>"; };
+		15F85AFC1E5ACAEC00FA9C0F /* FMVedioTopToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVedioTopToolBar.h; sourceTree = "<group>"; };
+		15F85AFD1E5ACAEC00FA9C0F /* FMVedioTopToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVedioTopToolBar.m; sourceTree = "<group>"; };
+		15F85AFF1E5ACB7700FA9C0F /* FMVedioNoHighlightButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMVedioNoHighlightButton.h; sourceTree = "<group>"; };
+		15F85B001E5ACB7700FA9C0F /* FMVedioNoHighlightButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMVedioNoHighlightButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,8 +189,12 @@
 				153B716B1E56D44100095268 /* FMVideoFullScreenPlayController.m */,
 				153B71671E5694B900095268 /* FMVedioBottomToolBar.h */,
 				153B71681E5694B900095268 /* FMVedioBottomToolBar.m */,
-				15A192881E57EB17004F7A57 /* FMVideoPlayer.h */,
-				15A192891E57EB17004F7A57 /* FMVideoPlayer.m */,
+				15F85AFC1E5ACAEC00FA9C0F /* FMVedioTopToolBar.h */,
+				15F85AFD1E5ACAEC00FA9C0F /* FMVedioTopToolBar.m */,
+				15F85AFF1E5ACB7700FA9C0F /* FMVedioNoHighlightButton.h */,
+				15F85B001E5ACB7700FA9C0F /* FMVedioNoHighlightButton.m */,
+				15BE2BAD1E5C0B6100E3B923 /* FMVideoNetTool.h */,
+				15BE2BAE1E5C0B6100E3B923 /* FMVideoNetTool.m */,
 			);
 			path = FMVideoPlayView;
 			sourceTree = "<group>";
@@ -352,13 +362,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BE2BAF1E5C0B6100E3B923 /* FMVideoNetTool.m in Sources */,
+				15F85B011E5ACB7700FA9C0F /* FMVedioNoHighlightButton.m in Sources */,
 				153B71001E5578B500095268 /* ViewController.m in Sources */,
-				15A1928A1E57EB17004F7A57 /* FMVideoPlayer.m in Sources */,
 				153B71691E5694B900095268 /* FMVedioBottomToolBar.m in Sources */,
 				153B70FD1E5578B500095268 /* AppDelegate.m in Sources */,
 				153B70FA1E5578B500095268 /* main.m in Sources */,
 				153B71311E55A43900095268 /* FMVideoPlayView.m in Sources */,
 				153B716C1E56D44100095268 /* FMVideoFullScreenPlayController.m in Sources */,
+				15F85AFE1E5ACAEC00FA9C0F /* FMVedioTopToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
